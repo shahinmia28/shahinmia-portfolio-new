@@ -5,9 +5,8 @@ import Svgwave from './Svgwave';
 import styled from 'styled-components';
 const Footer = () => {
   return (
-    <Wrapper className='footer'>
+    <Wrapper className='footer' id='footer'>
       <Svgwave />
-
       <div className='info '>
         <div className='container'>
           <div className='row'>

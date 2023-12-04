@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Intro = () => {
   return (
     <Wrapper id='home'>
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='intro-container row'>
           <div className='col col-12 col-md-6'>
             <div className='content'>
@@ -17,8 +17,8 @@ const Intro = () => {
                 fast, functional and interactive website or web application.
               </p>
               <div className='button-group'>
-                <a href='#'>Download Resume</a>
-                <a href='#'>Find Me</a>
+                <a href='image/mycv.pdf'>Resume</a>
+                <a href='#footer'>Find Me</a>
               </div>
             </div>
             <span className='h-line'></span>
