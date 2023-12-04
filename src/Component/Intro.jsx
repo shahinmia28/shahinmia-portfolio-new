@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Intro = () => {
   return (
     <Wrapper id='home'>
-      <div className='container-fluid'>
+      <div className='container'>
         <div className='intro-container row'>
           <div className='col col-12 col-md-6'>
             <div className='content'>
@@ -69,28 +69,43 @@ const Wrapper = styled.section`
         padding: 20px;
         margin: auto;
         padding-left: 20%;
+        @media (max-width: 768px) {
+          padding-left: 0;
+        }
         h2 {
           font-size: 30px;
           color: #040404;
           font-weight: bold;
+          @media (max-width: 768px) {
+            font-size: 25px;
+          }
         }
         h1 {
           font-weight: bold;
           color: #fff;
           font-size: 60px;
           margin: 10px 0px;
+          @media (max-width: 768px) {
+            font-size: 40px;
+          }
         }
         h3 {
           font-size: 25px;
           font-weight: 500;
           color: #111;
           font-style: italic;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
         p {
           font-size: 18px;
           text-align: justify;
           color: #fff;
           font-weight: 400;
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
         }
         .button-group {
           a {
@@ -141,6 +156,10 @@ const Wrapper = styled.section`
           border-radius: 100%;
           transition: all 0.4s linear;
           animation: imgBlink 2s infinite;
+          @media (max-width: 768px) {
+            height: 250px;
+            width: 230px;
+          }
           &:hover {
             transform: scale(1.3);
           }
