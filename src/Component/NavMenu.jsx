@@ -118,18 +118,17 @@ const Wrapper = styled.section`
 
       @media (max-width: 768px) {
         display: block;
-        background: transparent;
+        background: #fff;
         z-index: -1 !important;
         position: absolute;
         left: -300px;
         top: 80px;
         padding-top: 30px;
         width: 250px;
-        height: 250px;
         border-radius: 10px;
         box-shadow: 0 0 15px -5px #333;
         li {
-          color: #fff;
+          color: #333;
           padding: 5px;
           margin: 10px;
           a {
@@ -143,7 +142,7 @@ const Wrapper = styled.section`
             top: 65px;
             background: #fff;
             li {
-              color: #555;
+              color: #333;
             }
           }
         }

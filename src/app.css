@@ -24,9 +24,11 @@ body {
   color: #009760;
   line-height: 1.2;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .title-underLine {
-  width: 100px;
+  width: 130px;
   height: 5px;
-  background: #4de5f0;
+  background: linear-gradient(to right, #212cff 0%, #787fff 50%, #212cff 100%);
+  border-radius: 10px;
 }

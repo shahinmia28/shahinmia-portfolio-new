@@ -1,30 +1,33 @@
-import Typewriter from 'typewriter-effect';
-import { webDesign } from '../data';
 import styled from 'styled-components';
 
 const Intro = () => {
-  const typeData = webDesign.map((d) => d.title);
   return (
-    <Wrapper id='intro'>
-      <div className='overlay'></div>
-      <div className='intro-container'>
-        <div className='left'>
-          <h1>Spend More To Get The Quality Work</h1>
-          <div className='blue-ray'></div>
-        </div>
-        <div className='content'>
-          <h2>There, I'm </h2>
-          <h1>Shahin Mia</h1>
-          <h3>
-            <p> Experienced at</p>
-            <Typewriter
-              options={{
-                strings: typeData,
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h3>
+    <Wrapper id='home'>
+      <div className='container'>
+        <div className='intro-container row'>
+          <div className='col col-12 col-md-6'>
+            <div className='content'>
+              <h2>Hey There,</h2>
+              <h1>Shahin Mia</h1>
+              <h3>MERN Stack Web Developer</h3>
+              <p>
+                I'm a professional and highly experienced web developer with
+                expertise in creating responsive websites and web applications.
+                I am using MERN Stack technology to develop an application,
+                fast, functional and interactive website or web application.
+              </p>
+              <div className='button-group'>
+                <a href='#'>Download Resume</a>
+                <a href='#'>Find Me</a>
+              </div>
+            </div>
+            <span className='h-line'></span>
+          </div>
+          <div className='col col-12 col-md-6'>
+            <div className='image'>
+              <img src='/image/shahin.jpg' alt='intro-img' />
+            </div>
+          </div>
         </div>
       </div>
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 260'>
@@ -39,90 +42,120 @@ const Intro = () => {
 };
 const Wrapper = styled.section`
   width: 100%;
-  max-height: 800px;
-  position: relative;
   overflow: hidden;
-  z-index: 1;
+  position: relative;
+  background: linear-gradient(to bottom, #006640ff 0%, #2bffb1ff 100%);
   svg {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 2;
   }
-  .overlay {
-    background: linear-gradient(to bottom, #009760ff 0%, #2bffb1ff 100%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1 !important;
-  }
+
   .intro-container {
     width: 100%;
-    margin: 200px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 4;
+    margin-top: 130px;
+    margin-bottom: 280px;
     @media (max-width: 768px) {
-      margin: 50px 0;
-      text-align: center;
+      margin: 100px 0;
     }
-    .left {
-      width: 700px;
-      padding: 20px 30px;
-      margin: auto;
+    .col {
+      display: flex;
       @media (max-width: 768px) {
-        display: none;
+        padding-top: 50px;
       }
-      h1 {
-        padding: 10px;
-        font-size: 72px;
-        font-weight: 700;
-        letter-spacing: 4px;
-        line-height: 1.1;
-        color: #fff;
-
-        @media (max-width: 992px) {
-          font-size: 45px;
+      .content {
+        text-align: right;
+        padding: 20px;
+        margin: auto;
+        padding-left: 20%;
+        h2 {
+          font-size: 30px;
+          color: #040404;
+          font-weight: bold;
         }
-      }
-      .blue-ray {
-        margin: 10px;
-        background-color: #4de5f0;
-        width: 150px;
-        height: 6px;
-      }
-    }
-    .content {
-      padding: 20px 30px;
-      margin: auto;
-      width: 500px;
-      color: #040404;
-      h2 {
-        font-size: 30px;
-        color: #040404;
-        font-weight: bold;
-      }
-      h1 {
-        font-weight: bold;
-        color: #fff;
-        font-size: 50px;
-        margin: 10px 0px;
-      }
-      h3 {
-        font-size: 27px;
-        font-weight: bold;
-        span {
-          font-size: inherit;
-          color: #fff1f4;
-          font-weight: normal;
+        h1 {
+          font-weight: bold;
+          color: #fff;
+          font-size: 60px;
+          margin: 10px 0px;
+        }
+        h3 {
+          font-size: 25px;
+          font-weight: 500;
+          color: #111;
           font-style: italic;
         }
+        p {
+          font-size: 18px;
+          text-align: justify;
+          color: #fff;
+          font-weight: 400;
+        }
+        .button-group {
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: none;
+            margin: 5px;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px -3px #111;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.4s linear;
+            cursor: pointer;
+            &:hover {
+              box-shadow: 0 0 10px -3px #fff;
+            }
+          }
+        }
       }
-      @media (max-width: 768px) {
-        margin: 100px auto;
+
+      .h-line {
+        height: 100%;
+        padding-right: 1px;
+        background: linear-gradient(to bottom, #ffffffff 0%, #87ffd1ff 100%);
+        position: relative;
+        &::before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: #007e50ff;
+          position: absolute;
+          border-radius: 50%;
+          top: 0;
+          left: -6px;
+          border: 1px solid #fff;
+        }
+      }
+      .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        img {
+          height: 350px;
+          width: 330px;
+          border-radius: 100%;
+          transition: all 0.4s linear;
+          animation: imgBlink 2s infinite;
+          &:hover {
+            transform: scale(1.3);
+          }
+          @keyframes imgBlink {
+            0% {
+              box-shadow: 0 0 20px -10px #fff;
+            }
+            50% {
+              box-shadow: 0 0 20px 1px #fff;
+            }
+            100% {
+              box-shadow: 0 0 20px -10px #fff;
+            }
+          }
+        }
       }
     }
   }

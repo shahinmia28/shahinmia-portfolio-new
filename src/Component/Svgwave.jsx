@@ -9,23 +9,23 @@ const Svgwave = () => {
         id='svg'
         viewBox='0 0 1440 320'
         xmlns='http://www.w3.org/2000/svg'
-        class='transition duration-300 ease-in-out delay-150'
+        className='transition duration-300 ease-in-out delay-150'
       >
         <path
           d='M 0,400 C 0,400 0,133 0,133 C 193.33333333333331,107.13333333333333 386.66666666666663,81.26666666666667 521,90 C 655.3333333333334,98.73333333333333 730.6666666666667,142.06666666666666 874,155 C 1017.3333333333333,167.93333333333334 1228.6666666666665,150.46666666666667 1440,133 C 1440,133 1440,400 1440,400 Z'
           stroke='none'
-          stroke-width='0'
+          strokeWidth='0'
           fill='#2bffb1ff'
-          fill-opacity='1'
-          class='transition-all duration-300 ease-in-out delay-150 path-0'
+          fillOpacity='1'
+          className='transition-all duration-300 ease-in-out delay-150 path-0'
         ></path>
         <path
           d='M 0,400 C 0,400 0,266 0,266 C 182,283.6 364,301.2 502,302 C 640,302.8 734,286.8 883,278 C 1032,269.2 1236,267.6 1440,266 C 1440,266 1440,400 1440,400 Z'
           stroke='none'
-          stroke-width='0'
+          strokeWidth='0'
           fill='#009760ff'
-          fill-opacity='1'
-          class='transition-all duration-300 ease-in-out delay-150 path-1'
+          fillOpacity='1'
+          className='transition-all duration-300 ease-in-out delay-150 path-1'
         ></path>
       </svg>
     </Wrapper>

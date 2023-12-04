@@ -40,7 +40,7 @@ const Contact = () => {
           <div className='col-12 col-md-6 form-container'>
             <div className='form-box p-3'>
               <div className='my-title'>
-                <h2>contact us</h2>
+                <h2>Give Comments</h2>
                 <div className='title-underLine'></div>
               </div>
               <form ref={form} onSubmit={sendEmail}>
@@ -69,7 +69,7 @@ const Contact = () => {
                   cols='90'
                   rows='4'
                   className='form-control'
-                  placeholder='Write your massage...'
+                  placeholder='Write your comments'
                   required
                 ></textarea>
 
@@ -99,7 +99,7 @@ const Contact = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 40px 0;
+  padding-top: 80px;
   background: linear-gradient(to bottom, #d0ffef 0%, #ffffff 100%);
   .container {
     .row {
