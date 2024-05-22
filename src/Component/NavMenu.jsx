@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavMenuLists } from '../data';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const NavMenu = () => {
   const [navBar, setNavBar] = useState(false);
@@ -19,9 +20,9 @@ const NavMenu = () => {
     <Wrapper>
       <nav className={navBar ? 'navigation-bar scroll' : 'navigation-bar'}>
         <h1>
-          <a href='#' className='nav-link'>
+          <Link to='/' className='nav-link'>
             Shahin M.
-          </a>
+          </Link>
         </h1>
 
         <ul

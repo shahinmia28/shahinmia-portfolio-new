@@ -83,6 +83,7 @@ const Contact = () => {
             <div className='mapouter'>
               <div className='gmap_canvas'>
                 <iframe
+                  title='mappppp'
                   id='gmap_canvas'
                   src='https://maps.google.com/maps?q=bhuapur,%20tangail,%20dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed'
                   frameBorder='0'
