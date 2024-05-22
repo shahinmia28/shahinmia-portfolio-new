@@ -5,7 +5,7 @@ const Counter = ({ animationStart, percentage }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (count === percentage) {
+      if (count == percentage) {
         clearInterval(interval);
       } else {
         setCount(count + 1);
@@ -14,6 +14,7 @@ const Counter = ({ animationStart, percentage }) => {
 
     return () => clearInterval(interval);
   }, [count]);
+
   return <>{count}%</>;
 };
 
